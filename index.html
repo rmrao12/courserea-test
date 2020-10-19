@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Coursera</title>
+    <script src="angular.min.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>angular app</title>
   </head>
-  <body>
-    <h1>Hello coursera students</h1>
+  <body ng-app="myApp">
+    <h1>Hello  angular app is here</h1>
+    <div  ng-controller="myCtrl">
+     {{name}}
+     {{sayhello()}}
+    </div>
   </body>
 </html>
